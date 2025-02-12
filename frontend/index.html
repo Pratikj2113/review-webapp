@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="write">Write Review</button>
+
+    <div id="review-form">
+        <h2>Submit a Review</h2>
+        <label for="title">username:<span class="required">*</span></label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="content">review:<span class="required">*</span></label>
+        <textarea id="content" name="content" required></textarea><br><br>
+
+        <label for="rating">Rating (1-5):</label>
+        <select id="rating" name="rating">
+            <option value="1">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br><br>
+
+        <button id="submit-button">Submit Review</button>
+    </div>
+
+    <div id="reviews-container">
+        <h2>Reviews</h2>
+        <!-- Reviews will be dynamically added here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

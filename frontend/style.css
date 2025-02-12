@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: antiquewhite;
+    margin: 20px;
+}
+#write {
+    border: none;
+    outline: none;
+    background-color: #6c5ce7;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #a29bfe;
+  }
+  
+  #write:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #a29bfe;
+  }
+
+#review-form {
+    width: 90%; /* Use percentage for width */
+    max-width: 600px; /* Set a maximum width */
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Important for padding and border */
+}
+
+#review-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#review-form input,
+#review-form textarea,
+#review-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Keep padding within element */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#review-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin-left: 13rem ;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review-card {
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 90%; /* Percentage width for cards */
+    max-width: 300px; /* Maximum width for cards */
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding is within the width */
+}
+
+.review-card h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.review-card p {
+    margin-bottom: 8px;
+}
+
+.review-card .timestamp {
+    font-size: 0.8em;
+    color: #777;
+}
+
+/* Media Query for Smartphones */
+@media (max-width: 600px) {
+    #review-form {
+        width: 95%; /* Further reduce width on small screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .review-card {
+        width: 95%; /* Make cards full width on small screens */
+        margin: 5px; /* Reduce margin for smaller screens */
+        padding: 10px;
+    }
+
+    #review-form input[type="text"],
+    #review-form input[type="email"],
+    #review-form textarea,
+    #review-form select {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+
+    #review-form button {
+        padding: 12px 20px; /* Make buttons easier to tap */
+        font-size: 16px;
+    }
+}
